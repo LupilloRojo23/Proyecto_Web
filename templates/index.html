@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sender_data() {
+            // Corregí el uso de comillas en 'response'
+            document.getElementById('response').innerText = "Descargando video, espere por favor...";
+            const data = { name: document.getElementById('name').value }; // Corregí el ID del input
+            fetch('http://127.0.0.1:5000/api/data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('response').innerText = data.received_data;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>Descargar videos</h2>
+    <!-- Eliminé el espacio extra en el ID -->
+    <input type="text" id="name" placeholder="Coloque URL del video">
+    <button onclick="sender_data()">Descargar Video</button>
+    <p id="response"></p>
+</body>
+</html>
