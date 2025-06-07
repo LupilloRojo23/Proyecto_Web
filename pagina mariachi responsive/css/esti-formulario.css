@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(/img/fondoM.jpg);
+    height: 100vh;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px; /* Corregido: eliminado el espacio antes de 'px' */
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%); /* Corregido: eliminadas las comillas alrededor del valor */
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Corregido: cambiado 'PX' a 'px' */
+    background: #6C3483;
+}
+
+.username input:focus ~ label, /* Corregido: eliminada la repetición de la regla */
+.username input:focus ~ span::before {
+    top: -5px;
+    color: #6C3483;
+    transition: .5s;
+}
+
+.username input:focus ~ span::before {
+    width: 100%;
+}
+
+.recordar {
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    background: #6C3483;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color: purple;
+    transition: 0.5s;
+}
+
+.registrar {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.registrarse a {
+    color: blue;
+    text-decoration: none;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
+/* Contenedor para los botones */
+.btn-container {
+    display: flex;
+    justify-content: space-between; /* Asegura que los botones estén separados */
+}
+
+/* Estilos comunes para ambos botones */
+.btn {
+    width: 45%; /* Ajusta el ancho para que quepan uno al lado del otro */
+    height: 35px; /* Altura más pequeña */
+    border: 1px solid #6C3483;
+    border-radius: 20px; /* Bordes redondeados */
+    background: #6C3483;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin: 5px; /* Espacio alrededor de los botones */
+}
+
+/* Estilos para el botón "Registrarse" al pasar el cursor */
+.btn:hover {
+    background-color: purple;
+    transition: background-color 0.5s ease;
+}
+
+/* Estilos para el botón "Cancelar" */
+.btn.cancelar {
+    background: #4A235A; /* Un color diferente para el botón "Cancelar" */
+}
+
+/* Estilos para el botón "Cancelar" al pasar el cursor */
+.btn.cancelar:hover {
+    background-color: #512E5F;
+    transition: background-color 0.5s ease;
+}
+

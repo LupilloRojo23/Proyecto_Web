@@ -1,0 +1,21 @@
+.menu {
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    min-height: 70px; /* Ajusta la altura según tu contenido */
+    position: sticky; /* Establece la posición pegajosa */
+    top: 0; /* Fija el elemento en la parte superior */
+    z-index: 1000; /* Ajusta el índice z para controlar el apilamiento */
+    display: flex;
+    align-items: center;
+} 
+*{
+    font-family: Parrafos;
+    font-size: 30px;
+
+}  
+@font-face {
+    font-family: Parrafos;
+    src: url(/recursos/Melodin.otf);
+}

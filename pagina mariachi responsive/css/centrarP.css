@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    min-height: 200vh;
+    background-image:url(/img/fondoM.jpg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrarP {
+    width: 90%; /* Ajusta el ancho según tus necesidades */
+    max-width: 1600px; /* Establece el ancho máximo */
+    margin: 40px auto; /* Margen superior e inferior automático, y margen lateral automático */
+    padding: 35px; /* Espaciado interno */
+    background-color:white; /* Color de fondo */
+    border-radius: 30px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* General Styles */
+
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 30px; /* Ajusta el tamaño de la fuente aquí */
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+.center {
+    text-align: center;
+    margin: 20px;
+}
+
+.carousel-item img {
+    width: auto;
+    height: 500px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 17px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}

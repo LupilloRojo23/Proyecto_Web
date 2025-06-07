@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fondo blanco para el cuerpo de la página */
+    min-height: 100vh; /* Asegura que el cuerpo cubra al menos la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: auto; /* Empuja el footer al final de la página */
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffdd00;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffdd00;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffdd00;
+}
+
+button[type="submit"] {
+    background-color: #ffdd00;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+/* Social Media Styles */
+.social-media {
+    margin: 10px 0;
+}
+
+.social-icon {
+    margin: 0 5px;
+    color: #ffdd00;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffcc00;
+}
+
+/* Paragraph Styles */
+footer p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+/* Special Text Styles */
+.special-text {
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 10px;
+    }
+
+    .contact-form h2 {
+        font-size: 18px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 12px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .social-icon {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .special-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 5px;
+    }
+
+    .contact-form h2 {
+        font-size: 16px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .social-icon {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 8px;
+    }
+
+    .special-text {
+        font-size: 10px;
+    }
+}

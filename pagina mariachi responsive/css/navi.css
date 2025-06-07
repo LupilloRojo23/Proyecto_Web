@@ -1,0 +1,21 @@
+nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para los enlaces */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    
+    
+}
+#logo{
+    max-width: auto; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto; /* Para mantener la proporción de la imagen */
+    border-radius: 10px;
+    position: left;
+}
